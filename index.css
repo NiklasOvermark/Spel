@@ -11,14 +11,14 @@ body{
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px  450px 50px;
+    grid-template-rows: 450px 50px;
     cursor: pointer;
 }
 /*to creat menu bar*/
 .menu{
     border: solid black;
     grid-column: 1/-1;
-    margin: auto 20px;
+    margin:0;
 
 }
 .menu ul{
