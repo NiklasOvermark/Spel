@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+}
+
+.wrapper{
+    margin: 0;
+    padding: 10px;
+    background-image: linear-gradient(rgba(0,0 , 0, 0.3),rgba(0, 0, 0, 0.3)), url(color-mosaic-piano.jpg);
+    width: 100mh;
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px  450px 50px;
+    cursor: pointer;
+}
+/*to creat menu bar*/
+.menu{
+    border: solid black;
+    grid-column: 1/-1;
+    margin: auto 20px;
+
+}
+.menu ul{
+    list-style-type: none ;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:  #333;
+}
+.menu li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+.menu li:last-child {
+    border-right: none;
+}
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+.menu a:hover{
+    background-color: #111;
+  }
+.menu a:active{
+    background-color: #4caf50;
+}
+
+.wrap{
+    margin: 0 20px 0 20px;
+    grid-column: 2/1;
+    text-align: left;
+    padding: 15px;
+    
+}
+/*  login and welcome text*/
+#welcome{
+    margin: 10px;
+    padding: 10px ;
+    color: white;
+
+}
+/* form design*/
+.form{
+    position: relative;
+    z-index: auto;
+    background-color: rgba(226, 225, 225, 0.5);
+    max-width: 200px;
+    margin: 0 auto 0;
+    padding: 45px;
+    text-align: center;
+
+}
+.form p{
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #9e9e9d;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form input{
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f3f3e9;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;    
+    outline: 0;
+    background: #111111;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.form button:hover, form button:active{
+    background: #43A047;
+
+}
+
+.foot{
+    margin:0 20px 0 0;
+    grid-column: 2/1;
+    margin: 0 20px 0 0;
+    padding: 10px;
+    color: white;
+    text-align: right !important;
+    position: relative;
+}
