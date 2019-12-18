@@ -18,7 +18,7 @@ body{
 .menu{
     border: solid black;
     grid-column: 1/-1;
-    margin: auto 20px;
+    margin: 0px;
 
 }
 .menu ul{
