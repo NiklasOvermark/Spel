@@ -5,7 +5,7 @@ body{
 .wrapper{
     margin: 0;
     padding: 10px;
-    background-image: linear-gradient(rgba(0,0 , 0, 0.3),rgba(0, 0, 0, 0.3)), url(img\color-mosaic-piano.jpg);
+    background-image: linear-gradient(rgba(0,0 , 0, 0.3),rgba(0, 0, 0, 0.3)), url(Spel\img\color-mosaic-piano.jpg);
     width: 100mh;
     height: 100vh;
     text-align: center;
