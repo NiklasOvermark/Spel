@@ -1,6 +1,6 @@
 
 //function for text file(That's not working in google chrome)
-function aboutPianoTiles(){
+function about(){
     var xmlhttp;
     if(window.XMLHttpRequest){
 
