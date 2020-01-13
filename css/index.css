@@ -1,7 +1,7 @@
 body{
     margin: 0;
 }
-
+/*index pages design*/
 .wrapper{
     margin: 0;
     padding: 10px;
@@ -14,6 +14,21 @@ body{
     grid-template-rows: 450px 50px;
     cursor: pointer;
 }
+/* start page design*/
+.wrapper2{
+    margin: 0;
+    padding: 10px;
+    background-image: linear-gradient(rgba(0,0 , 0, 0.3),rgba(0, 0, 0, 0.3)), url(../img/colors-wide.png);
+    width: 1fr;
+    height: 1fr;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 400px 600px;
+    grid-template-rows: 70px  430px 50px;
+    cursor: pointer;
+}
+
+/* instruction pages design*/
 .wrap-inst{
     background-image: url(../img/instuctionPuzzle.jpg);
     margin: 0;
@@ -29,6 +44,7 @@ body{
     color: white;
     
 }
+/*about pages design*/
 .wrappAbout{
         margin: 0;
         padding: 50px;
@@ -99,7 +115,7 @@ body{
     color: white;
 
 }
-/* form design*/
+/* form design in index page*/
 .form{
     position: relative;
     z-index: auto;
@@ -138,7 +154,7 @@ body{
     background: #43A047;
 
 }
-
+/*foot page design*/
 .foot{
     margin:0 20px 0 0;
     grid-column: 2/1;
@@ -147,20 +163,6 @@ body{
     color: white;
     text-align: right !important;
     position: relative;
-}
-
-
-.wrapper2{
-    margin: 0;
-    padding: 10px;
-    background-image: linear-gradient(rgba(0,0 , 0, 0.3),rgba(0, 0, 0, 0.3)), url(../img/colors-wide.png);
-    width: 1fr;
-    height: 1fr;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 400px 600px;
-    grid-template-rows: 70px  430px 50px;
-    cursor: pointer;
 }
 
 .menu li a:hover:not(.active) {
