@@ -10,18 +10,22 @@ jumpSpeedMulti = 0.9;
 var canJump = true;
 var myObstacles = [];
 
-
+// Start function
 function startGame() {
     gamearea.start();
 
 }
+
+// keeping track of interval
 function everyinterval(n) {
     if (gamearea.frame % n == 0) return true;
     return false;
 }
 
+// setup game area
 var gamearea = {
     canvas: document.createElement("canvas"),
+    // setup game area at the start
     start: function () {
         this.canvas.height = 250;
         this.canvas.width = 800;
@@ -32,6 +36,7 @@ var gamearea = {
         score.update("Score: 0");
         this.interval = setInterval(this.updateGameArea, 16);
     },
+    // uppdate game area
     updateGameArea: function () {
         for (i = 0; i < myObstacles.length; i++) {
             if (player.crash(myObstacles[i])) {
@@ -39,16 +44,19 @@ var gamearea = {
                 return;
             }
         }
+        
         gamearea.clear();
+        // every 80 interval adda new obstacle
         if (everyinterval(80)) {
             myObstacles.push(new obstacle());
             gamearea.frame = 0;
         }
-
+        // move the obstacle and draw it  
         for (i = 0; i < myObstacles.length; i++) {
             myObstacles[i].x -= 5 + SpeedChange;
             myObstacles[i].draw();
         }
+        // update the position of the player
         player.newPos();
         player.update();
 
@@ -58,20 +66,23 @@ var gamearea = {
         score.update("Score: " + Math.floor(gamearea.score));
 
     },
+    // clear game area
     clear: function () {
         gamearea.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     },
+    // stop the game
     stop: function () {
         clearInterval(this.interval)
     }
 
 }
 
-
+// jump function
 function jump() {
     player.jumpSpeed = -15;
 }
 
+//player class
 var player = {
     x: 150,
     y: 250 - 30,
@@ -111,9 +122,9 @@ var player = {
         }
         return false;
     }
-
-
 }
+
+// object class
 function obstacle() {
     this.height = minHeight + Math.random(4) * addedHeight;
     this.width = minWidth + Math.random(4) * addedwidth;
@@ -125,6 +136,7 @@ function obstacle() {
     }
 }
 
+// score class
 var score = {
     x: 400,
     y: 50,
@@ -135,6 +147,7 @@ var score = {
     }
 }
 
+// keep track of whne "SPACE" is pressed
 $(window).keypress(function (e) {
     if (e.which === 32 && canJump) {
         jump();
