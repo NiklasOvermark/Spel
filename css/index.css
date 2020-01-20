@@ -172,10 +172,13 @@ body{
     background-color: #4caf50;
 }
 /* game area*/
-.game{
+#game{
     border: solid black;
-    grid-column: 2/1;
     margin: 0 0 0 20px;
+}
+canvas{
+    border:5px solid #000000;
+    background-color:rgb(65, 65, 65) ;
 }
 
 .highs{

@@ -29,7 +29,9 @@ var gamearea = {
     start: function () {
         this.canvas.height = 250;
         this.canvas.width = 800;
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        var gameWindow = document.getElementById("game");
+        gameWindow.insertBefore(this.canvas, gameWindow.childNodes[0]);
+        //document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.context = this.canvas.getContext("2d");
         this.frame = 0;
         this.score = 0;
@@ -44,7 +46,7 @@ var gamearea = {
                 return;
             }
         }
-        
+
         gamearea.clear();
         // every 80 interval adda new obstacle
         if (everyinterval(80)) {
@@ -103,7 +105,7 @@ var player = {
             this.jumpSpeed *= -1;
             jumpSpeedMulti = 1.1
         }
-        if (this.jumpSpeed > 0 && this.y >= 250-30) {
+        if (this.jumpSpeed > 0 && this.y >= 250 - 30) {
             this.jumpSpeed = 0;
             if (this.jumpSpeed == 0) {
                 canJump = true;
@@ -117,7 +119,7 @@ var player = {
 
     },
     crash: function (obs) {
-        if (this.x + this.width > obs.x -3- SpeedChange && this.x + this.width < obs.x + obs.width + this.height && this.y + this.height > obs.y) {
+        if (this.x + this.width > obs.x - 3 - SpeedChange && this.x + this.width < obs.x + obs.width + this.height && this.y + this.height > obs.y) {
             return true;
         }
         return false;
@@ -154,3 +156,5 @@ $(window).keypress(function (e) {
         canJump = false;
     }
 });
+
+startGame();

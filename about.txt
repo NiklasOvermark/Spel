@@ -1,21 +1,9 @@
-Piano Tiles (known on iOS as Piano Tiles – Don't Tap the White Tile and on Android 
-as Don't Tap the White Tile) is a single-player mobile game launched on March 
-28, 2014 by Umoni Studio, specifically by creator Hu Wen Zeng. The game contains six
- modes; these modes are Classic mode; the Arcade mode; the Zen mode; the Rush mode; 
-the Arcade+ mode (which includes the Bomb, Lightning, Bilayer, and Double tiles);<br>
-and the Relay mode.In late-April 2014 the game was the most downloaded application 
-on both the iOS and Android platforms.In early July it was released for Windows Phone.
-A sequel, Piano Tiles 2, was created by Hu Wen Zeng and launched by Cheetah Mobile on 
-August 19, 2015.<br><br>
+Jump is a game like T-Rex jumper where the player need to jump over obstacle while running forword, 
+the longer you survive the higher your score.
+
 
 Gameplay<br>
-A screenshot of a game of Piano Tiles in progress
-Piano Tiles is a game where the player's objective is to tap on the black tiles as they 
-appear from the top of the screen while avoiding the white. When each black tile is tapped, 
-it will emit a piano sound. In quick succession, forms famous compositions such as Für 
-Elise and Ode to Joy.Bluestone Alley composed by Congfei Wei is Piano Tiles 2 song 
-level it is original composition of Piano Tiles 2, other songs by Congfei Wei is Aurora 
-and Forest of Blocks.<br>If the player taps on a white tile, the player will lose the game 
-and be signaled by an off-tune note.Piano tiles 2 had a long tile tap, double tiles,
- rapid tiles and slide tiles, and use one song per game, will unlocked 3 new songs per level 
-up and its first level song is Little Star.
+
+The games objective is to jump over obstacle as they 
+appear from the right side of the screen, to jump you need to press the "space" key on the keyboard.
+To get score you need to run forword the longer you survive the more points you get.
