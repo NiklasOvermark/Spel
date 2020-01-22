@@ -156,13 +156,12 @@ body{
 }
 /*foot page design*/
 .foot{
-    margin:0 20px 0 0;
     grid-column: 2/1;
-    margin: 0 20px 0 0;
     padding: 10px;
     color: white;
     text-align: right !important;
     position: relative;
+    background-color: #333;
 }
 
 .menu li a:hover:not(.active) {
@@ -172,16 +171,21 @@ body{
     background-color: #4caf50;
 }
 /* game area*/
-.game{
+#game{
     border: solid black;
-    grid-column: 2/1;
     margin: 0 0 0 20px;
+    width: 810px;
+    height: 260px;
+}
+canvas{
+    border:5px solid #000000;
+    background-color:rgb(65, 65, 65) ;
 }
 
 .highs{
     border: solid black;
     grid-column: 2/2;
-    margin: 0 20px 0 0;
+    margin: 0 0px 0 0;
 }
 
 
