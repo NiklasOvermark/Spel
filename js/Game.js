@@ -40,13 +40,14 @@ var gamearea = {
     },
     // uppdate game area
     updateGameArea: function () {
+        // cheack if player has crashed
         for (i = 0; i < myObstacles.length; i++) {
             if (player.crash(myObstacles[i])) {
                 gamearea.stop;
                 return;
             }
         }
-
+        // clear gamearea
         gamearea.clear();
         // every 80 interval adda new obstacle
         if (everyinterval(80)) {
@@ -62,9 +63,12 @@ var gamearea = {
         player.newPos();
         player.update();
 
+        // variable update
         gamearea.frame += 1;
         gamearea.score += 0.1;
         SpeedChange += 0.001;
+
+        // score Update
         score.update("Score: " + Math.floor(gamearea.score));
 
     },
@@ -84,7 +88,7 @@ function jump() {
     player.jumpSpeed = -15;
 }
 
-//player class
+//player object
 var player = {
     x: 150,
     y: 250 - 30,
@@ -126,7 +130,7 @@ var player = {
     }
 }
 
-// object class
+// obstacle object 
 function obstacle() {
     this.height = minHeight + Math.random(4) * addedHeight;
     this.width = minWidth + Math.random(4) * addedwidth;
@@ -138,7 +142,7 @@ function obstacle() {
     }
 }
 
-// score class
+// score objec
 var score = {
     x: 400,
     y: 50,
@@ -157,4 +161,5 @@ $(window).keypress(function (e) {
     }
 });
 
+// call statGame function
 startGame();
