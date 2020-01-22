@@ -14,3 +14,5 @@ Rima kommer att fixa inläsning av reglerna från text-fil,
 Timmy kommer att definera reglerna och skapa spelmekaniken, 
 Anna får göra sidan responsiv och 
 Niklas får skapa en highscorelista.
+
+2020-01-22
